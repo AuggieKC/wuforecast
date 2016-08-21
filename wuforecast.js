@@ -48,7 +48,7 @@ Module.register("wuforecast",{
                         "mostlysunny": "wi-day-sunny-overcast",
                         "partlycloudy": "wi-day-cloudy",
                         "partlysunny": "wi-day-cloudy-high",
-			"rain": "wi-rain",
+			            "rain": "wi-rain",
                         "sleet": "wi-sleet",
                         "snow": "wi-snow",
                         "tstorms": "wi-thunderstorm"
@@ -141,7 +141,7 @@ Module.register("wuforecast",{
 			row.appendChild(iconCell);
 
 			var icon = document.createElement("span");
-			icon.className = forecast.icon;
+			icon.className = "wi weathericon " + forecast.icon;
 			iconCell.appendChild(icon);
 
 			// Set the degree symbol if desired
